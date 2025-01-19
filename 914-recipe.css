@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0; /* 패딩 제거 */
+    height: 100vh; /* 전체 높이 설정 */
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    justify-content: flex-start; /* 상단 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+    color: #ffffff; /* 기본 텍스트 색상 */
+    position: relative; /* 자식 요소의 절대 위치 조정을 위해 상대 위치 설정 */
+    background-color: #1C1C1F; /* 배경색을 #1C1C1F로 설정 */
+}
+
+header {
+    width: 100%; /* 전체 너비 설정 */
+    position: absolute; /* 절대 위치 설정 */
+    top: -10px; /* 상단으로 더 이동 */
+    left: 0; /* 왼쪽 끝 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+.tab-title {
+    display: block; /* 블록 요소로 설정 */
+    font-size: 16px; /* 제목 글자 크기 조정 */
+    font-weight: 500; /* 굵기 조정 */
+    color: #ffffff; /* 제목 색상을 흰색으로 설정 */
+    background-color: #2e2e33; /* 배경색을 어두운 회색으로 설정 */
+    padding: 10px; /* 패딩 추가 */
+    width: calc(100% + 20px); /* 전체 너비를 채우되, 여백 추가 */
+    margin-left: -10px; /* 왼쪽 여백을 음수로 설정하여 끝까지 채우기 */
+    box-sizing: border-box; /* 패딩을 포함한 너비 계산 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+.tab-link {
+    color: #ffffff; /* 링크 색상을 흰색으로 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    padding: 0 10px; /* 좌우 패딩 추가 */
+}
+
+.tab-link:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
+
+.tab-link.active {
+    font-weight: bold; /* 활성 탭 강조 */
+}
+
+/* 키카드 색상 및 텍스트 색상 */
+.card-suwi {
+    background-color: #BAAEE2; /* 수위 키카드 */
+    color: #BAAEE2; /* 텍스트 색상 */
+}
+
+.card-guyuk {
+    background-color: #217977; /* 구역 관리자 키카드 */
+    color: #217977; /* 텍스트 색상 */
+}
+
+.card-gwahak {
+    background-color: #E8D676; /* 과학자 키카드 */
+    color: #E8D676; /* 텍스트 색상 */
+}
+
+.card-yeongu {
+    background-color: #DEAC21; /* 연구 감독관 키카드 */
+    color: #DEAC21; /* 텍스트 색상 */
+}
+
+.card-sisil {
+    background-color: #5F6570; /* 시설 경비 키카드 */
+    color: #5F6570; /* 텍스트 색상 */
+}
+
+.card-gumiho {
+    background-color: #5281F5; /* 구미호 요원 키카드 */
+    color: #5281F5; /* 텍스트 색상 */
+}
+
+.card-gumiho-daeui {
+    background-color: #1D47C8; /* 구미호 대위 키카드 */
+    color: #1D47C8; /* 텍스트 색상 */
+}
+
+.card-sisil-jangsa {
+    background-color: #AF1B44; /* 시설 관리자 키카드 */
+    color: #AF1B44; /* 텍스트 색상 */
+}
+
+.card-hondong {
+    background-color: #32453B; /* 혼돈의 반란 키카드 */
+    color: #32453B; /* 텍스트 색상 */
+}
+
+.card-O5 {
+    background-color: #E7E7E7; /* O5 키카드 */
+    color: #E7E7E7; /* 텍스트 색상 */
+}
+
+main {
+    padding: 40px; /* 메인 패딩 */
+    margin: 80px auto 20px; /* 상단 여백을 추가하여 헤더와 간격 유지 */
+    max-width: 800px; /* 최대 너비 설정 */
+    background-color: #2e2e33; /* 메인 배경색 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+}
+
+h2 {
+    font-size: 28px; /* 제목 크기 조정 */
+    margin-bottom: 10px; /* 아래 마진 */
+    text-align: center; /* 중앙 정렬 */
+    color: #ffffff; /* 제목 색상 흰색 */
+}
+
+h3 {
+    font-size: 22px; /* 하위 제목 크기 조정 */
+    margin-top: 20px; /* 위쪽 마진 */
+    margin-bottom: 10px; /* 아래 마진 */
+    color: #ffffff; /* 제목 색상 흰색 */
+}
+
+ul {
+    list-style-type: none; /* 기본 리스트 스타일 제거 */
+    padding: 0; /* 패딩 제거 */
+}
+
+li {
+    background-color: #444; /* 리스트 항목 배경색 */
+    margin: 5px 0; /* 리스트 항목 간격 */
+    padding: 12px; /* 패딩 추가 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    transition: background-color 0.3s; /* 배경색 전환 효과 */
+    color: inherit; /* 부모의 색상 상속 */
+}
+
+li:hover {
+    background-color: #555; /* 호버 시 배경색 변경 */
+}
+
+.divider {
+    width: 100%; /* 전체 너비 */
+    height: 2px; /* 두께 */
+    background-color: #666; /* 색상 */
+    margin: 20px 0; /* 마진 */
+}
+
+footer {
+    text-align: center; /* 중앙 정렬 */
+    padding: 15px; /* 패딩 추가 */
+    background-color: #2e2e33; /* 푸터 배경색 */
+    position: relative; /* 상대 위치 */
+    bottom: 0; /* 하단 정렬 */
+    width: 100%; /* 전체 너비 설정 */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* 위쪽 그림자 추가 */
+}
