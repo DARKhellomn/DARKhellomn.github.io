@@ -43,74 +43,29 @@ header {
     text-decoration: underline; /* 호버 시 밑줄 추가 */
 }
 
-.tab-link.active {
-    font-weight: bold; /* 활성 탭 강조 */
-}
-
-/* 키카드 색상 및 텍스트 색상 */
-.card-suwi {
-    background-color: #BAAEE2; /* 수위 키카드 */
-    color: #BAAEE2; /* 텍스트 색상 */
-}
-
-.card-guyuk {
-    background-color: #217977; /* 구역 관리자 키카드 */
-    color: #217977; /* 텍스트 색상 */
-}
-
-.card-gwahak {
-    background-color: #E8D676; /* 과학자 키카드 */
-    color: #E8D676; /* 텍스트 색상 */
-}
-
-.card-yeongu {
-    background-color: #DEAC21; /* 연구 감독관 키카드 */
-    color: #DEAC21; /* 텍스트 색상 */
-}
-
-.card-sisil {
-    background-color: #5F6570; /* 시설 경비 키카드 */
-    color: #5F6570; /* 텍스트 색상 */
-}
-
-.card-gumiho {
-    background-color: #5281F5; /* 구미호 요원 키카드 */
-    color: #5281F5; /* 텍스트 색상 */
-}
-
-.card-gumiho-daeui {
-    background-color: #1D47C8; /* 구미호 대위 키카드 */
-    color: #1D47C8; /* 텍스트 색상 */
-}
-
-.card-sisil-jangsa {
-    background-color: #AF1B44; /* 시설 관리자 키카드 */
-    color: #AF1B44; /* 텍스트 색상 */
-}
-
-.card-hondong {
-    background-color: #32453B; /* 혼돈의 반란 키카드 */
-    color: #32453B; /* 텍스트 색상 */
-}
-
-.card-O5 {
-    background-color: #E7E7E7; /* O5 키카드 */
-    color: #E7E7E7; /* 텍스트 색상 */
-}
-
-main {
-    padding: 40px; /* 메인 패딩 */
-    margin: 80px auto 20px; /* 상단 여백을 추가하여 헤더와 간격 유지 */
+.recipe-page {
+    padding: 40px; /* 페이지 패딩 */
+    margin: 20px auto; /* 중앙 정렬 */
     max-width: 800px; /* 최대 너비 설정 */
-    background-color: #2e2e33; /* 메인 배경색 */
+    width: 800px; /* 고정 너비 설정 */
+    background-color: #2e2e33; /* 페이지 배경색 */
     border-radius: 8px; /* 모서리 둥글게 */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 표시 */
 }
 
-h2 {
+
+
+.title-container {
+    display: flex; /* 플렉스 박스 사용 */
+    justify-content: space-between; /* 양쪽 끝으로 배치 */
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 100%; /* 전체 너비 사용 */
+}
+
+h1 {
     font-size: 28px; /* 제목 크기 조정 */
-    margin-bottom: 10px; /* 아래 마진 */
-    text-align: center; /* 중앙 정렬 */
+    margin: 0; /* 기본 마진 제거 */
     color: #ffffff; /* 제목 색상 흰색 */
 }
 
@@ -154,4 +109,25 @@ footer {
     bottom: 0; /* 하단 정렬 */
     width: 100%; /* 전체 너비 설정 */
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* 위쪽 그림자 추가 */
+}
+
+button {
+    margin: 0; /* 마진 제거 */
+    padding: 7px 14px;
+    background-color: #5281F5; /* 기본 버튼 배경색 */
+    color: #ffffff; /* 버튼 글자색 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    cursor: pointer; /* 커서 변경 */
+    display: inline-block; /* 인라인 블록으로 설정하여 제목과 나란히 배치 */
+}
+
+button:hover {
+    background-color: #3a5b9a; /* 호버 시 색상 변경 */
+}
+
+button:disabled {
+    background-color: red; /* 비활성화된 버튼 색상 */
+    cursor: not-allowed; /* 비활성화된 버튼 커서 변경 */
+    opacity: 0.5; /* 비활성화된 버튼 투명도 */
 }

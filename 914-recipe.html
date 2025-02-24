@@ -18,106 +18,315 @@
             <a href="#" class="tab-link">SCP 진영 가이드</a>
         </h1>
     </header>
+    
     <main>
-        <h1>SCP-914 키카드 레시피</h1>
-        <p>강화 방법으로는 Rough, Coarse, 1:1, Fine, Very Fine 총 5개의 방식이 있습니다.</p>
-        <hr class="divider">
-        
-        <div class="recipe-container">
-            <h3 style="color: #BAAEE2;">수위 키카드</h3>
-            <ul>
-                <li>ROUGH : X</li>
-                <li>COARSE : X</li>
-                <li>1:1 : <span style="color: #217977;">구역 관리자 키카드</span></li>
-                <li>FINE : <span style="color: #E8D676;">과학자 키카드</span></li>
-                <li>VERY FINE : <span style="color: #E8D676;">과학자 키카드(50%)</span> / <span style="color: #DEAC21;">연구 감독관 키카드(50%)</span></li>
-            </ul>
+        <!-- 키카드 레시피 페이지 -->
+        <div class="recipe-page" id="page-1">
+            <div class="title-container">
+                <h1>SCP-914 키카드 레시피</h1>
+                <button class="next-btn" onclick="nextPage()">다음</button>
+            </div>
+            <p>강화 방법으로는 Rough, Coarse, 1:1, Fine, Very Fine 총 5개의 방식이 있습니다.</p>
+            <hr class="divider">
+            <div class="recipe-container">
+                <h3 style="color: #BAAEE2;">수위 키카드</h3>
+                <ul>
+                    <li>ROUGH : <span style="color: red;">X</span></li>
+                    <li>COARSE : <span style="color: red;">X</span></li>
+                    <li>1:1 : <span style="color: #217977;">구역 관리자 키카드</span></li>
+                    <li>FINE : <span style="color: #E8D676;">과학자 키카드</span></li>
+                    <li>VERY FINE : <span style="color: #E8D676;">과학자 키카드(50%)</span> / <span style="color: #DEAC21;">연구 감독관 키카드(50%)</span></li>
+                </ul>
 
-            <h3 style="color: #E8D676;">과학자 키카드</h3>
-            <ul>
-                <li>ROUGH : X(50%) / <span style="color: #BAAEE2;">수위 키카드(50%)</span></li>
-                <li>COARSE : <span style="color: #BAAEE2;">수위 키카드</span></li>
-                <li>1:1 : <span style="color: #217977;">구역 관리자 키카드</span></li>
-                <li>FINE : <span style="color: #DEAC21;">연구 감독관 키카드</span></li>
-                <li>VERY FINE : <span style="color: #E8D676;">과학자 키카드(33%)</span> / <span style="color: #DEAC21;">연구 감독관 키카드(33%)</span> / <span style="color: #AF1B44;">시설 관리자 키카드(33%)</span></li>
-            </ul>
-
-            <h3 style="color: #DEAC21;">연구 감독관 키카드</h3>
-            <ul>
-                <li>ROUGH : <span style="color: #BAAEE2;">수위 키카드(50%)</span> / <span style="color: #E8D676;">과학자 키카드(50%)</span></li>
-                <li>COARSE : <span style="color: #E8D676;">과학자 키카드</span></li>
-                <li>1:1 : <span style="color: #5F6570;">시설 경비 키카드</span></li>
-                <li>FINE : <span style="color: #AF1B44;">시설 관리자 키카드</span></li>
-                <li>VERY FINE : <span style="color: #DEAC21;">연구 감독관 키카드(50%)</span> / <span style="color: #AF1B44;">시설 관리자 키카드(50%)</span></li>
-            </ul>
-
-            <h3 style="color: #5F6570;">시설 경비 키카드</h3>
-            <ul>
-                <li>ROUGH : <span style="color: #BAAEE2;">수위 키카드(50%)</span> / <span style="color: #E8D676;">과학자 키카드(50%)</span></li>
-                <li>COARSE : <span style="color: #E8D676;">과학자 키카드</span></li>
-                <li>1:1 : <span style="color: #DEAC21;">연구 감독관 키카드</span></li>
-                <li>FINE : <span style="color: #5281F5;">구미호 요원 키카드</span></li>
-                <li>VERY FINE : <span style="color: #5F6570;">시설 경비 키카드(33%)</span> / <span style="color: #5281F5;">구미호 요원 키카드(33%)</span> / <span style="color: #1D47C8;">구미호 대위 키카드(33%)</span></li>
-            </ul>
-
-            <h3 style="color: #5281F5;">구미호 요원 키카드</h3>
-            <ul>
-                <li>ROUGH : X(50%) / <span style="color: #5F6570;">시설 경비 키카드(50%)</span></li>
-                <li>COARSE : <span style="color: #5F6570;">시설 경비 키카드</span></li>
-                <li>1:1 : <span style="color: #AF1B44;">시설 관리자 키카드</span></li>
-                <li>FINE : <span style="color: #1D47C8;">구미호 대위 키카드</span></li>
-                <li>VERY FINE : <span style="color: #5281F5;">구미호 요원 키카드(33%)</span> / <span style="color: #1D47C8;">구미호 대위 키카드(33%)</span> / <span style="color: #E7E7E7;">O5-등급 키카드(33%)</span></li>
-            </ul>
-
-            <h3 style="color: #1D47C8;">구미호 대위 키카드</h3>
-            <ul>
-                <li>ROUGH : <span style="color: #5F6570;">시설 경비 키카드</span></li>
-                <li>COARSE : <span style="color: #5281F5;">구미호 요원 키카드</span></li>
-                <li>1:1 : <span style="color: #32453B;">혼돈의 반란 접속 장치</span></li>
-                <li>FINE : <span style="color: #E7E7E7;">O5-등급 키카드</span></li>
-                <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(75%)</span> / X(25%)</li>
-
-                <h3 style="color: #217977;">구역 관리자 키카드</h3>
+                <h3 style="color: #E8D676;">과학자 키카드</h3>
+                <ul>
+                    <li>ROUGH : <span style="color: red;">X</span>(50%) / <span style="color: #BAAEE2;">수위 키카드(50%)</span></li>
+                    <li>COARSE : <span style="color: #BAAEE2;">수위 키카드</span></li>
+                    <li>1:1 : <span style="color: #217977;">구역 관리자 키카드</span></li>
+                    <li>FINE : <span style="color: #DEAC21;">연구 감독관 키카드</span></li>
+                    <li>VERY FINE : <span style="color: #E8D676;">과학자 키카드(33%)</span> / <span style="color: #DEAC21;">연구 감독관 키카드(33%)</span> / <span style="color: #AF1B44;">시설 관리자 키카드(33%)</span></li>
+                </ul>
+    
+                <h3 style="color: #DEAC21;">연구 감독관 키카드</h3>
                 <ul>
                     <li>ROUGH : <span style="color: #BAAEE2;">수위 키카드(50%)</span> / <span style="color: #E8D676;">과학자 키카드(50%)</span></li>
                     <li>COARSE : <span style="color: #E8D676;">과학자 키카드</span></li>
                     <li>1:1 : <span style="color: #5F6570;">시설 경비 키카드</span></li>
                     <li>FINE : <span style="color: #AF1B44;">시설 관리자 키카드</span></li>
-                    <li>VERY FINE : <span style="color: #AF1B44;">시설 관리자 키카드(40%)</span> / <span style="color: #217977;">구역 관리자 키카드(40%)</span> / <span style="color: #32453B;">혼돈의 반란 접속 장치(20%)</span></li>
+                    <li>VERY FINE : <span style="color: #DEAC21;">연구 감독관 키카드(50%)</span> / <span style="color: #AF1B44;">시설 관리자 키카드(50%)</span></li>
                 </ul>
-                <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(75%)</span> / X(25%)</li>
-            </ul>
-
-            <h3 style="color: #AF1B44;">시설 관리자 키카드</h3>
-            <ul>
-                <li>ROUGH : <span style="color: #217977;">구역 관리자 키카드</span></li>
-                <li>COARSE : <span style="color: #1D47C8;">구미호 대위 키카드</span></li>
-                <li>1:1 : <span style="color: #32453B;">혼돈의 반란 접속 장치</span></li>
-                <li>FINE : <span style="color: #E7E7E7;">O5-등급 키카드</span></li>
-                <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(75%)</span> / X(25%)</li>
-            </ul>
-
-            <h3 style="color: #32453B;">혼돈의 반란 접속 장치</h3>
-            <ul>
-                <li>ROUGH : <span style="color: #5F6570;">시설 경비 키카드</span></li>
-                <li>COARSE : <span style="color: #5281F5;">구미호 요원 키카드</span></li>
-                <li>1:1 : <span style="color: #1D47C8;">구미호 대위 키카드</span></li>
-                <li>FINE : <span style="color: #E7E7E7;">O5-등급 키카드</span></li>
-                <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(75%)</span> / X(25%)</li>
-            </ul>
-
-            <h3 style="color: #E7E7E7;">O5-등급 키카드</h3>
-            <ul>
-                <li>ROUGH : <span style="color: #5F6570;">시설 경비 키카드</span></li>
-                <li>COARSE : <span style="color: #AF1B44;">시설 관리자 키카드(50%)</span> / <span style="color: #1D47C8;">구미호 대위 키카드(50%)</span></li>
-                <li>1:1 : <span style="color: #E7E7E7;">O5-등급 키카드</span></li>
-                <li>FINE : <span style="color: #E7E7E7;">O5-등급 키카드(50%)</span> / X(50%)</li>
-                <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(25%)</span> / X(75%)</li>
-            </ul>
+    
+                <h3 style="color: #5F6570;">시설 경비 키카드</h3>
+                <ul>
+                    <li>ROUGH : <span style="color: #BAAEE2;">수위 키카드(50%)</span> / <span style="color: #E8D676;">과학자 키카드(50%)</span></li>
+                    <li>COARSE : <span style="color: #E8D676;">과학자 키카드</span></li>
+                    <li>1:1 : <span style="color: #DEAC21;">연구 감독관 키카드</span></li>
+                    <li>FINE : <span style="color: #5281F5;">구미호 요원 키카드</span></li>
+                    <li>VERY FINE : <span style="color: #5F6570;">시설 경비 키카드(33%)</span> / <span style="color: #5281F5;">구미호 요원 키카드(33%)</span> / <span style="color: #1D47C8;">구미호 대위 키카드(33%)</span></li>
+                </ul>
+    
+                <h3 style="color: #5281F5;">구미호 요원 키카드</h3>
+                <ul>
+                    <li>ROUGH : <span style="color: red;">X</span>(50%) / <span style="color: #5F6570;">시설 경비 키카드(50%)</span></li>
+                    <li>COARSE : <span style="color: #5F6570;">시설 경비 키카드</span></li>
+                    <li>1:1 : <span style="color: #AF1B44;">시설 관리자 키카드</span></li>
+                    <li>FINE : <span style="color: #1D47C8;">구미호 대위 키카드</span></li>
+                    <li>VERY FINE : <span style="color: #5281F5;">구미호 요원 키카드(33%)</span> / <span style="color: #1D47C8;">구미호 대위 키카드(33%)</span> / <span style="color: #E7E7E7;">O5-등급 키카드(33%)</span></li>
+                </ul>
+    
+                <h3 style="color: #1D47C8;">구미호 대위 키카드</h3>
+                <ul>
+                    <li>ROUGH : <span style="color: #5F6570;">시설 경비 키카드</span></li>
+                    <li>COARSE : <span style="color: #5281F5;">구미호 요원 키카드</span></li>
+                    <li>1:1 : <span style="color: #3d7a3d;">혼돈의 반란 접속 장치</span></li>
+                    <li>FINE : <span style="color: #E7E7E7;">O5-등급 키카드</span></li>
+                    <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(75%)</span> / <span style="color: red;">X</span>(25%)</li>
+    
+                    <h3 style="color: #217977;">구역 관리자 키카드</h3>
+                    <ul>
+                        <li>ROUGH : <span style="color: #BAAEE2;">수위 키카드(50%)</span> / <span style="color: #E8D676;">과학자 키카드(50%)</span></li>
+                        <li>COARSE : <span style="color: #E8D676;">과학자 키카드</span></li>
+                        <li>1:1 : <span style="color: #5F6570;">시설 경비 키카드</span></li>
+                        <li>FINE : <span style="color: #AF1B44;">시설 관리자 키카드</span></li>
+                        <li>VERY FINE : <span style="color: #AF1B44;">시설 관리자 키카드(40%)</span> / <span style="color: #217977;">구역 관리자 키카드(40%)</span> / <span style="color: #3d7a3d;">혼돈의 반란 접속 장치(20%)</span></li>
+                    </ul>
+                    <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(75%)</span> / <span style="color: red;">X</span>(25%)</li>
+                </ul>
+    
+                <h3 style="color: #AF1B44;">시설 관리자 키카드</h3>
+                <ul>
+                    <li>ROUGH : <span style="color: #217977;">구역 관리자 키카드</span></li>
+                    <li>COARSE : <span style="color: #1D47C8;">구미호 대위 키카드</span></li>
+                    <li>1:1 : <span style="color: #3d7a3d;">혼돈의 반란 접속 장치</span></li>
+                    <li>FINE : <span style="color: #E7E7E7;">O5-등급 키카드</span></li>
+                    <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(75%)</span> / <span style="color: red;">X</span>(25%)</li>
+                </ul>
+    
+                <h3 style="color: #3d7a3d;">혼돈의 반란 접속 장치</h3>
+                <ul>
+                    <li>ROUGH : <span style="color: #5F6570;">시설 경비 키카드</span></li>
+                    <li>COARSE : <span style="color: #5281F5;">구미호 요원 키카드</span></li>
+                    <li>1:1 : <span style="color: #1D47C8;">구미호 대위 키카드</span></li>
+                    <li>FINE : <span style="color: #E7E7E7;">O5-등급 키카드</span></li>
+                    <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(75%)</span> / <span style="color: red;">X</span>(25%)</li>
+                </ul>
+    
+                <h3 style="color: #E7E7E7;">O5-등급 키카드</h3>
+                <ul>
+                    <li>ROUGH : <span style="color: #5F6570;">시설 경비 키카드</span></li>
+                    <li>COARSE : <span style="color: #AF1B44;">시설 관리자 키카드(50%)</span> / <span style="color: #1D47C8;">구미호 대위 키카드(50%)</span></li>
+                    <li>1:1 : <span style="color: #E7E7E7;">O5-등급 키카드</span></li>
+                    <li>FINE : <span style="color: #E7E7E7;">O5-등급 키카드(50%)</span> / <span style="color: red;">X</span>(50%)</li>
+                    <li>VERY FINE : <span style="color: #E7E7E7;">O5-등급 키카드(25%)</span> / <span style="color: red;">X</span>(75%)</li>
+                </ul>
+            </div>
         </div>
+
+        <div class="recipe-page" id="page-2" style="display: none;">
+            <div class="title-container">
+                <h1>전투 아이템 레시피</h1>
+                <div class="button-container">
+                    <button class="prev-btn" onclick="prevPage()">이전</button>
+                    <button class="next-btn" onclick="nextPage()">다음</button>
+                </div>
+            </div>
+
+            <p>강화 방법으로는 Rough, Coarse, 1:1, Fine, Very Fine 총 5개의 방식이 있습니다.</p>
+            <hr class="divider">
+            <div class="recipe-container">
+                <h3><span style="color: #a1a6b1;">COM-15</span></h3>
+                <ul>
+                    <li>ROUGH : <span style="color: red;">X</span>(50%) / <span style="color: brown;">9x19mm탄</span> <span style="color: red;">X</span> 15(50%)</li>
+                    <li>COARSE : <span style="color: #a1a6b1;">COM-15</span>(50%) / <span style="color: brown;">9x19mm탄</span> <span style="color: red;">X</span> 15(50%)</li>
+                    <li>1:1 : <span style="color: #a1a6b1;">COM-15</span></li>
+                    <li>FINE : <SPAN STYLE="COLOR: #E7D1A1;">COM-18</SPAN></li>
+                    <li>VERY FINE : <SPAN STYLE="COLOR: #AF1B44;">리볼버</SPAN>(29.5%) / <SPAN STYLE="COLOR: RGB(128, 128, 128);">FSP-9</SPAN>(55.5%) / COM-45(15%)</li>
+                </ul>
+        
+                <h3><SPAN STYLE="COLOR: #E7D1A1;">COM-18</S]PAN></h3>
+                <ul>
+                    <li>ROUGH : <span style="color: brown;">9x19mm탄</span> <span style="color: red;">X</span> 15(50%) / <span style="color: brown;">9x19mm탄</span> <span style="color: red;">X</span> 30(50%)</li>
+                    <li>COARSE : <span style="color: #a1a6b1;">COM-15</span></li>
+                    <li>1:1 : <SPAN STYLE="COLOR: #E7D1A1;">COM-18</S]PAN></li>
+                    <li>FINE : <SPAN STYLE="COLOR: RGB(128, 128, 128);">FSP-9</SPAN></li>
+                    <li>VERY FINE : <SPAN STYLE="COLOR: #AF1B44;">리볼버</SPAN>(45%) / <span style="color: #5281F5;">Crossvec(벡터)</span>(55%)</li>
+                </ul>
+        
+                <h3><SPAN STYLE="COLOR: #AF1B44;">리볼버</SPAN></h3>
+                <ul>
+                    <li>ROUGH : <span style="color: red;">X</span>(50%) / <span style="color: #DEAC21;">.44매그넘</span> <span style="color: red;">X</span> 6(50%)</li>
+                    <li>COARSE : <SPAN STYLE="COLOR: #E7D1A1;">COM-18</SPAN>(80%) / <SPAN STYLE="COLOR: #217977;">수류탄</SPAN>(20%)</li>
+                    <li>1:1 : <SPAN STYLE="COLOR: #AF1B44;">리볼버</SPAN></li>
+                    <li>FINE : <span style="color: #5281F5;">Crossvec(벡터)</span></li>
+                    <li>VERY FINE : <SPAN STYLE="COLOR: #217977;">수류탄</SPAN> <span style="color: red;">X</span> 2(50%) / <span style="color: #AF1B44;">시설 관리자 키카드(40%)</span> + <span style="color: #a1a6b1;">COM-15</span> + 구급상자 + 진통제(50%)</li>
+                </ul>
+        
+                <h3><SPAN STYLE="COLOR: RGB(128, 128, 128);">FSP-9</SPAN></h3>
+                <ul>
+                    <li>ROUGH : <span style="color: red;">X</span>(50%) / <span style="color: brown;">9x19mm탄</span> <span style="color: red;">X</span> 45(50%)</li>
+                    <li>COARSE : <SPAN STYLE="COLOR: #E7D1A1;">COM-18</S]PAN></li>
+                    <li>1:1 : <SPAN STYLE="COLOR: RGB(128, 128, 128);">FSP-9</SPAN></li>
+                    <li>FINE : <span style="color: #5281F5;">Crossvec(벡터)</span></li>
+                    <li>VERY FINE : <span style="color: #5281F5;">Crossvec(벡터)</span>(70%) / <span style="color: #6779c9;">MTF-E11-SR(앱실론)</span>(30%)</li>
+                </ul>
+        
+                <h3><span style="color: #5281F5;"><span style="color: #5281F5;">Crossvec(벡터)</span></span></h3>
+                <ul>
+                    <li>ROUGH : <span style="color: red;">X</span>(50%) / <span style="color: brown;">9x19mm탄</span> <span style="color: red;">X</span> 60(50%)</li>
+                    <li>COARSE : <SPAN STYLE="COLOR: RGB(128, 128, 128);">FSP-9</SPAN></li>
+                    <li>1:1 : <span style="color: #5281F5;">Crossvec(벡터)</span></li>
+                    <li>FINE : <SPAN STYLE="COLOR: #6779c9;">MTF-E11-SR(앱실론)</SPAN>(60%) / <span style="color: darkolivegreen;">AK</span>(40%)</li>
+                    <li>VERY FINE : <SPAN STYLE="COLOR: #6779c9;">MTF-E11-SR(앱실론)</SPAN>(70%) / <span style="color: darkgreen;">산탄총</span>(30%)</li>
+                </ul>
+        
+                <h3><SPAN STYLE="COLOR: #6779c9;">MTF-E11-SR(앱실론)</SPAN></h3>
+                <ul>
+                    <li>ROUGH : <span style="color: #a1a6b1;">COM-15</span>(50%) / 5.56x45mm탄 <span style="color: red;">X</span> 80(50%)</li>
+                    <li>COARSE : <span style="color: #5281F5;">Crossvec(벡터)</span></li>
+                    <li>1:1 : <SPAN STYLE="COLOR: #6779c9;">MTF-E11-SR(앱실론)</SPAN></li>
+                    <li>FINE : <SPAN STYLE="COLOR: DARKOLIVEGREEN;">AK</SPAN></li>
+                    <li>VERY FINE : <span style="color: #5281F5;">Crossvec(벡터)</span>(30%) / <SPAN STYLE="COLOR: DARKOLIVEGREEN;">AK</SPAN>(30%) / <SPAN STYLE="COLOR: #1D47C8;">FR-MG-0</SPAN>(25%) / <SPAN STYLE="COLOR: DARKGREEN;">산탄총</SPAN>(10%) / 마이크로 H.I.D(5%)</li>
+                </ul>
+        
+                <h3><span style="color: #1D47C8;">FR-MG-0</span></h3>
+                <ul>
+                    <li>ROUGH : <SPAN STYLE="COLOR: #6779c9;">MTF-E11-SR(앱실론)</SPAN>(50%) / 5.56x45mm탄 <span style="color: red;">X</span> 160(50%)</li>
+                    <li>COARSE : <SPAN STYLE="COLOR: #6779c9;">MTF-E11-SR(앱실론)</SPAN></li>
+                    <li>1:1 : FR-MG-0</li>
+                    <li>FINE : <span style="color: darkkhaki;">Logicer(로지카)</span></li>
+                    <li>VERY FINE : 마이크로 H.I.D(5%) / <SPAN STYLE="COLOR: #E7D1A1;">COM-18</SPAN> + <span style="color: #5281F5;">Crossvec(벡터)</span>(95%)</li>
+                </ul>
+        
+                <h3><SPAN STYLE="COLOR: DARKOLIVEGREEN;">AK</SPAN></h3>
+                <ul>
+                    <li>ROUGH : <span style="color: #a1a6b1;">COM-15</span>(50%) / 7.62x39mm탄 <span style="color: red;">X</span> 90(50%)</li>
+                    <li>COARSE : <span style="color: #5281F5;">Crossvec(벡터)</span>(50%) / A7(50%)</li>
+                    <li>1:1 : <SPAN STYLE="COLOR: DARKOLIVEGREEN;">AK</SPAN></li>
+                    <li>FINE : <SPAN STYLE="COLOR: #6779c9;">MTF-E11-SR(앱실론)/SPAN></li>
+                    <li>VERY FINE : <span style="color: #5281F5;">Crossvec(벡터)</span>(30%) / <SPAN STYLE="COLOR: DARKOLIVEGREEN;">AK</SPAN>(30%) / <span style="color: darkkhaki;">Logicer(로지카)</span>(25%) / <SPAN STYLE="COLOR: DARKGREEN;">산탄총</SPAN>(10%) / 마이크로 H.I.D(5%)</li>
+                </ul>
+        
+                <h3><SPAN STYLE="COLOR: DARKGREEN;">산탄총</SPAN></h3>
+                <ul>
+                    <li>ROUGH: COM-15(50%) / 12-70 벅샷 <span style="color: red;">X</span> 28(50%)</li>
+                    <li>COARSE : A7</li>
+                    <li>1:1 : <SPAN STYLE="COLOR: DARKGREEN;">산탄총</SPAN></li>
+                    <li>FINE : <span style="color: darkkhaki;">Logicer(로지카)</span></li>
+                    <li>VERY FINE : <SPAN STYLE="COLOR: DARKOLIVEGREEN;">AK</SPAN>(40%) / <span style="color: #5281F5;">Crossvec(벡터)</span>(30%) / <span style="color: darkkhaki;">Logicer(로지카)</span>(25%) / 마이크로 H.I.D(5%)</li>
+                </ul>
+        
+                <h3><span style="color: darkkhaki;">Logicer(로지카)</span></h3>
+                <ul>
+                    <li>ROUGH : <SPAN STYLE="COLOR: DARKOLIVEGREEN;">AK</SPAN>(50%) / 7.62x39mm탄 <span style="color: red;">X</span> 120(50%)</li>
+                    <li>COARSE : FR-MG-0</li>
+                    <li>1:1 : Logicer</li>
+                    <li>FINE : <SPAN STYLE="COLOR: DARKGREEN;">산탄총</SPAN></li>
+                    <li>VERY FINE : <SPAN STYLE="COLOR: DARKOLIVEGREEN;">AK</SPAN> + <span style="color: #217977;">수류탄</span> <span style="color: red;">X</span> 2(60%) / <SPAN STYLE="COLOR: DARKGREEN;">산탄총</SPAN> + <SPAN STYLE="COLOR: #AF1B44;">리볼버</SPAN>(30%) / 마이크로 H.I.D(10%)</li>
+                </ul>
+            </div>
+        </div>
+        
+    <div class="recipe-page" id="page-3" style="display: none;">
+        <div class="title-container">
+            <h1>의료품 레시피</h1>
+            <div class="button-container">
+                <button class="prev-btn" onclick="prevPage()">이전</button>
+                <button class="next-btn" onclick="nextPage()">다음</button>
+            </div>
+        </div>
+            <p>다음은 의료품에 대한 레시피입니다.</p>
+            <hr class="divider">
+            <div class="recipe-container">
+                <h3>진통제</h3>
+                <ul>
+                    <li>ROUGH: <span style="color: red;">X</span></li>
+                    <li>COARSE: <span style="color: red;">X</span>(50%) 또는 진통제(50%)</li>
+                    <li>1:1: 진통제</li>
+                    <li>FINE: 구급 상자</li>
+                    <li>VERY FINE: 구급 상자(50%) 또는 아드레날린(50%)</li>
+                </ul>
+        
+                <h3>구급 상자</h3>
+                <ul>
+                    <li>ROUGH: <span style="color: red;">X</span></li>
+                    <li>COARSE: 진통제</li>
+                    <li>1:1: 구급 상자</li>
+                    <li>FINE: 아드레날린</li>
+                    <li>VERY FINE: <span style="color: red;">X</span>(33%) 또는 구급 상자(33%) 또는 SCP-500(33%)</li>
+                </ul>
+        
+                <h3>아드레날린</h3>
+                <ul>
+                    <li>ROUGH: <span style="color: red;">X</span>(50%) 또는 진통제(50%)</li>
+                    <li>COARSE: 진통제(50%) 또는 구급 상자(50%)</li>
+                    <li>1:1: 아드레날린</li>
+                    <li>FINE: SCP-500</li>
+                    <li>VERY FINE: 진통제(66%) 또는 SCP-500(33%)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="recipe-page" id="page-4" style="display: none;">
+            <div class="title-container">
+                <h1>기타 아이템 레시피</h1>
+                <div class="button-container">
+                    <button class="prev-btn" onclick="prevPage()">이전</button>
+                    <button class="next-btn" onclick="nextPage()">다음</button>
+                </div>
+            </div>
     </main>
+    
     <footer>
         <p>&copy; 2025 SLGG.</p>
     </footer>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 4; // 총 페이지 수
+
+        function showPage(page) {
+            const pages = document.querySelectorAll('.recipe-page');
+            pages.forEach((p, index) => {
+                p.style.display = (index + 1 === page) ? 'block' : 'none';
+            });
+
+            // 버튼 색상 및 비활성화 처리
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+
+            if (page === 1) {
+                prevBtn.style.backgroundColor = 'red';
+                prevBtn.disabled = true;
+            } else {
+                prevBtn.style.backgroundColor = ''; // 기본 색상으로 복원
+                prevBtn.disabled = false;
+            }
+
+            if (page === totalPages) {
+                nextBtn.style.backgroundColor = 'red';
+                nextBtn.disabled = true;
+            } else {
+                nextBtn.style.backgroundColor = ''; // 기본 색상으로 복원
+                nextBtn.disabled = false;
+            }
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+
+        // 초기 페이지 표시
+        showPage(currentPage);
+    </script>
 </body>
 </html>
