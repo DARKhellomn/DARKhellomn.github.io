@@ -82,34 +82,21 @@ header {
     transform: scale(1.05); /* 호버 시 이미지 확대 */
 }
 
-/* 추가된 바 스타일 */
-.banner-line {
-    width: 70%; /* 원하는 너비로 설정 */
-    height: 10px; /* 높이 설정 */
-    background-color: #e7e7e7; /* 바 색상 */
-    margin: -350px auto; /* 위 아래 10px 여백, 좌우 중앙 정렬 */
-    display: block; /* 블록 요소로 설정 */
-    border-radius: 5px;
-}
-
-.banner-line2 {
-    width: 70%; /* 원하는 너비로 설정 */
-    height: 10px; /* 높이 설정 */
-    background-color: #e7e7e7; /* 바 색상 */
-    margin: 700px auto; /* 위 아래 10px 여백, 좌우 중앙 정렬 */
-    display: block; /* 블록 요소로 설정 */
-    border-radius: 5px;
-}
-
 .banner-line-doghoney {
-    width: 70%; /* 원하는 너비로 설정 */
-    height: 250px; /* 높이 설정 */
-    background-color: #000000; /* 바 색상 */
-    margin: -670px auto; /* 위 아래 10px 여백, 좌우 중앙 정렬 */
+    width: 70%; /* 가로 길이를 70%로 설정 */
+    margin: 15px auto; /* 위 아래 15px 여백, 좌우 중앙 정렬 */
     display: block; /* 블록 요소로 설정 */
     border-radius: 5px;
-    /* position: relative;  /* 필요에 따라 위치 조정 */
+    overflow: hidden; /* 이미지가 요소를 넘지 않도록 설정 */
 }
+
+.banner-image {
+    width: 50%; /* 부모 요소의 너비의 50%로 설정 */
+    height: auto; /* 비율 유지 */
+    display: block; /* 블록 요소로 설정하여 중앙 정렬 */
+    margin: 0 auto; /* 좌우 중앙 정렬 */
+}
+
 
 .last {
     width: 70%; /* 원하는 너비로 설정 */
