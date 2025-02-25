@@ -46,7 +46,7 @@ header {
 .recipe-page {
     padding: 40px; /* 페이지 패딩 */
     margin: 20px auto; /* 중앙 정렬 */
-    max-width: 800px; /* 최대 너비 설정 */
+    max-width: 1000px; /* 최대 너비 설정 */
     width: 800px; /* 고정 너비 설정 */
     background-color: #2e2e33; /* 페이지 배경색 */
     border-radius: 8px; /* 모서리 둥글게 */
